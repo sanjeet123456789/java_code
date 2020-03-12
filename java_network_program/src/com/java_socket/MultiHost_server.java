@@ -29,9 +29,6 @@ public class MultiHost_server {
 				out.close();
 				socket.close();
 			}
-			
-			
-			
 			server.close();
 		
 		} catch (Exception e) {

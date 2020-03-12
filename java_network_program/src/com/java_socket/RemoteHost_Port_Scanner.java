@@ -99,14 +99,9 @@ public class RemoteHost_Port_Scanner {
 				System.out.println(e.toString());
 			}
 			port++;
-			
-			
-			
+
 		}
-		
-		
-		
-		
+
 		
 		
 	}
