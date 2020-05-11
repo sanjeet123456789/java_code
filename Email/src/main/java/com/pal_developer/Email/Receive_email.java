@@ -33,6 +33,34 @@ public class Receive_email {
 		store.connect("smtp.gmail.com","sanjeetpal007@gmail.com","***");
 		
 		
+		/*
+		private String getTextFromMimeMultipart(
+        MimeMultipart mimeMultipart)  throws MessagingException, IOException{
+    String result = "";
+    int count = mimeMultipart.getCount();
+    for (int i = 0; i < count; i++) {
+        BodyPart bodyPart = mimeMultipart.getBodyPart(i);
+        if (bodyPart.isMimeType("text/plain")) {
+            result = result + "\n" + bodyPart.getContent();
+            break; // without break same text appears twice in my tests
+        } else if (bodyPart.isMimeType("text/html")) {
+            String html = (String) bodyPart.getContent();
+            result = result + "\n" + org.jsoup.Jsoup.parse(html).text();
+        } else if (bodyPart.getContent() instanceof MimeMultipart){
+            result = result + getTextFromMimeMultipart((MimeMultipart)bodyPart.getContent());
+        }
+    }
+    return result;*/
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		Folder inbox=store.getFolder("inbox");
 		inbox.open(Folder.READ_ONLY);
 		int messageCount=inbox.getMessageCount();
