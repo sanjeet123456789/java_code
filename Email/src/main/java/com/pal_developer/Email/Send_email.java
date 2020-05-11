@@ -42,6 +42,7 @@ public class Send_email {
 			MimeMessage message=new MimeMessage(session);
 			
 			message.setFrom(new InternetAddress(from));
+			//message.setFrom(new InternetAddress("me", "SPecial message"));
 			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
 			message.setSubject("This  is email subject header");
 			message.setText("this is email message boody <h2>Html form</h2> ");
